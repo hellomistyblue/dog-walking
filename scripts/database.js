@@ -114,3 +114,13 @@ export const getPets = () => {
     return structuredClone(database.pets);
 }
 
+export const getUniqueCities = () => {
+    let uniqueCities = []
+    const walkers = database.walkers
+    for (const walker of walkers) {
+        if (!uniqueCities.includes(walker.city)) {
+            uniqueCities.push(walker.city)
+        }
+    }
+    return uniqueCities
+}

@@ -3,6 +3,7 @@ import { CityList } from "./CityList.js"
 import { Assignments } from "./Assignments.js"
 import { RegisteredPets } from "./RegisteredPets.js"
 
+
 const mainContainer = document.querySelector("#container")
 
 const applicationHTML = `
